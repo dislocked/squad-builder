@@ -1,0 +1,8 @@
+{
+    "formations": [
+        { "id": "1", "name": "2-2-1", "lore": "Formacion equilibrada estandar."},
+        { "id": "2", "name": "3-1-1", "lore": "Formacion clasica del contraataque."},
+        { "id": "3", "name": "2-1-2", "lore": "Formacion ofensiva."},
+        { "id": "4", "name": "Default", "lore": "Formacion ofensiva."}
+    ]
+}

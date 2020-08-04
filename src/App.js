@@ -1,0 +1,36 @@
+import React, { useState } from 'react';
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import './App.css';
+
+
+import Nav from "./Components/Nav"
+import Home from "./Pages/Home"
+import Db from "./Pages/Db"
+import Profile from "./Pages/Profile"
+import Squad from "./Pages/Squad"
+import Table from "./Pages/Table"
+import Teams from "./Pages/Teams"
+
+document.title = "IOSoccer Sudamerica Stats";
+document.description = "Sitio web basado en PESMASTER cuyo fin es crear perfiles en tiempo real de los distintos usuarios de la comunidad de IOSoccer Sudamerica.";
+
+/*<Switch>
+          <Route path="/db" exact component={Db} />
+          <Route path="/players" component={Home} />
+          <Route path="/" exact component={Profile} />
+          <Route path="/teams" exact component={Teams} />
+          <Route path="/table" exact component={Table} />
+</Switch>*/
+
+function App(){
+  return(
+    <Router>
+      <div className="App">
+        <Nav />
+        <Squad />
+      </div>
+    </Router>
+  )
+}
+
+export default App;
