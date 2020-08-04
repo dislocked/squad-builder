@@ -785,7 +785,7 @@ function SquadBuilder(){
           design: .8,
           useful: 0.9,
         },
-        meta: { color: 'blue' }
+        meta: { color: 'red' }
       },
       {
         data: {
@@ -793,7 +793,7 @@ function SquadBuilder(){
           design: .85,
           useful: 0.5,
         },
-        meta: { color: 'red' }
+        meta: { color: 'blue' }
       }
     ];
  
