@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9a2d0e8474a7c3361306b7860ec4fa42",
+    "revision": "447790af937e3b4a9561f7904a0b411a",
     "url": "/squad-builder/index.html"
   },
   {
-    "revision": "de8f95f18c0bd505f358",
+    "revision": "d2821fb5285d5edc21d8",
     "url": "/squad-builder/static/css/2.9c14e806.chunk.css"
   },
   {
-    "revision": "eec4d6303c27caee8026",
+    "revision": "8b569da53a0198e7838c",
     "url": "/squad-builder/static/css/main.bc478f21.chunk.css"
   },
   {
-    "revision": "de8f95f18c0bd505f358",
-    "url": "/squad-builder/static/js/2.75b4ec44.chunk.js"
+    "revision": "d2821fb5285d5edc21d8",
+    "url": "/squad-builder/static/js/2.50ba3271.chunk.js"
   },
   {
     "revision": "7bb035bfd60efc6b5071b625dbe1f69b",
-    "url": "/squad-builder/static/js/2.75b4ec44.chunk.js.LICENSE.txt"
+    "url": "/squad-builder/static/js/2.50ba3271.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "eec4d6303c27caee8026",
-    "url": "/squad-builder/static/js/main.83d9433a.chunk.js"
+    "revision": "8b569da53a0198e7838c",
+    "url": "/squad-builder/static/js/main.bbc594c4.chunk.js"
   },
   {
     "revision": "3f75bba31fed5e2b843a",
@@ -170,6 +170,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f481a720c6a8e7cdfe1fe238a5875a28",
     "url": "/squad-builder/static/media/76561198098352684.f481a720.png"
+  },
+  {
+    "revision": "5b397eb6be32f3660e2390191a0decd0",
+    "url": "/squad-builder/static/media/76561198112507469.5b397eb6.png"
   },
   {
     "revision": "033b969651a320ac41ad69f813a2a38b",
@@ -356,8 +360,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/squad-builder/static/media/76561198358195209.c5f755dd.png"
   },
   {
-    "revision": "c759bd82911a6a2c27c19eed5ffb49d4",
-    "url": "/squad-builder/static/media/76561198358924982.c759bd82.png"
+    "revision": "68a2adb8e81b8345b2c39b96e1c57c5d",
+    "url": "/squad-builder/static/media/76561198358924982.68a2adb8.png"
   },
   {
     "revision": "969fb0a5e2ffff5f892dc27d7179dcb2",
