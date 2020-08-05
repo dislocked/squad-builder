@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/squad-builder/static/css/main.bc478f21.chunk.css",
-    "main.js": "/squad-builder/static/js/main.a07ee646.chunk.js",
-    "main.js.map": "/squad-builder/static/js/main.a07ee646.chunk.js.map",
+    "main.js": "/squad-builder/static/js/main.83d9433a.chunk.js",
+    "main.js.map": "/squad-builder/static/js/main.83d9433a.chunk.js.map",
     "runtime-main.js": "/squad-builder/static/js/runtime-main.da01d767.js",
     "runtime-main.js.map": "/squad-builder/static/js/runtime-main.da01d767.js.map",
     "static/css/2.9c14e806.chunk.css": "/squad-builder/static/css/2.9c14e806.chunk.css",
-    "static/js/2.11e4f812.chunk.js": "/squad-builder/static/js/2.11e4f812.chunk.js",
-    "static/js/2.11e4f812.chunk.js.map": "/squad-builder/static/js/2.11e4f812.chunk.js.map",
+    "static/js/2.75b4ec44.chunk.js": "/squad-builder/static/js/2.75b4ec44.chunk.js",
+    "static/js/2.75b4ec44.chunk.js.map": "/squad-builder/static/js/2.75b4ec44.chunk.js.map",
     "index.html": "/squad-builder/index.html",
-    "precache-manifest.6d155f2ae80bc6ff7acd601b45db1451.js": "/squad-builder/precache-manifest.6d155f2ae80bc6ff7acd601b45db1451.js",
+    "precache-manifest.e43dbc2fcb330aedfea4624f89eb548f.js": "/squad-builder/precache-manifest.e43dbc2fcb330aedfea4624f89eb548f.js",
     "service-worker.js": "/squad-builder/service-worker.js",
     "static/css/2.9c14e806.chunk.css.map": "/squad-builder/static/css/2.9c14e806.chunk.css.map",
     "static/css/main.bc478f21.chunk.css.map": "/squad-builder/static/css/main.bc478f21.chunk.css.map",
-    "static/js/2.11e4f812.chunk.js.LICENSE.txt": "/squad-builder/static/js/2.11e4f812.chunk.js.LICENSE.txt",
+    "static/js/2.75b4ec44.chunk.js.LICENSE.txt": "/squad-builder/static/js/2.75b4ec44.chunk.js.LICENSE.txt",
     "static/media/0.png": "/squad-builder/static/media/0.e2eefe35.png",
     "static/media/03.png": "/squad-builder/static/media/03.563377e9.png",
     "static/media/05.png": "/squad-builder/static/media/05.cea8ddf0.png",
@@ -107,6 +107,7 @@
     "static/media/76561198799604051.png": "/squad-builder/static/media/76561198799604051.154135be.png",
     "static/media/76561198806406730.png": "/squad-builder/static/media/76561198806406730.0d361b43.png",
     "static/media/76561198815014242.png": "/squad-builder/static/media/76561198815014242.b3f76776.png",
+    "static/media/76561198829366232.png": "/squad-builder/static/media/76561198829366232.fda8c007.png",
     "static/media/76561198844415604.png": "/squad-builder/static/media/76561198844415604.73174bd3.png",
     "static/media/76561198845617551.png": "/squad-builder/static/media/76561198845617551.bfac4863.png",
     "static/media/76561198848355047.png": "/squad-builder/static/media/76561198848355047.e6b2d87d.png",
@@ -117,6 +118,7 @@
     "static/media/76561198866503945.png": "/squad-builder/static/media/76561198866503945.b6d0b37b.png",
     "static/media/76561198883741325.png": "/squad-builder/static/media/76561198883741325.c84d8843.png",
     "static/media/76561198895001057.png": "/squad-builder/static/media/76561198895001057.c9f442b5.png",
+    "static/media/76561198920203765.png": "/squad-builder/static/media/76561198920203765.fda8c007.png",
     "static/media/76561198963699074.png": "/squad-builder/static/media/76561198963699074.b3f76776.png",
     "static/media/76561198981937065.png": "/squad-builder/static/media/76561198981937065.9f401b74.png",
     "static/media/76561199017224667.png": "/squad-builder/static/media/76561199017224667.264080ef.png",
@@ -225,8 +227,8 @@
   "entrypoints": [
     "static/js/runtime-main.da01d767.js",
     "static/css/2.9c14e806.chunk.css",
-    "static/js/2.11e4f812.chunk.js",
+    "static/js/2.75b4ec44.chunk.js",
     "static/css/main.bc478f21.chunk.css",
-    "static/js/main.a07ee646.chunk.js"
+    "static/js/main.83d9433a.chunk.js"
   ]
 }
