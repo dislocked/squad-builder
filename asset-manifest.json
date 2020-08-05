@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/squad-builder/static/css/main.bc478f21.chunk.css",
-    "main.js": "/squad-builder/static/js/main.418dac82.chunk.js",
-    "main.js.map": "/squad-builder/static/js/main.418dac82.chunk.js.map",
+    "main.js": "/squad-builder/static/js/main.a07ee646.chunk.js",
+    "main.js.map": "/squad-builder/static/js/main.a07ee646.chunk.js.map",
     "runtime-main.js": "/squad-builder/static/js/runtime-main.da01d767.js",
     "runtime-main.js.map": "/squad-builder/static/js/runtime-main.da01d767.js.map",
     "static/css/2.9c14e806.chunk.css": "/squad-builder/static/css/2.9c14e806.chunk.css",
     "static/js/2.11e4f812.chunk.js": "/squad-builder/static/js/2.11e4f812.chunk.js",
     "static/js/2.11e4f812.chunk.js.map": "/squad-builder/static/js/2.11e4f812.chunk.js.map",
     "index.html": "/squad-builder/index.html",
-    "precache-manifest.a9ec902ebd207077744e2d2ed53a7da7.js": "/squad-builder/precache-manifest.a9ec902ebd207077744e2d2ed53a7da7.js",
+    "precache-manifest.6d155f2ae80bc6ff7acd601b45db1451.js": "/squad-builder/precache-manifest.6d155f2ae80bc6ff7acd601b45db1451.js",
     "service-worker.js": "/squad-builder/service-worker.js",
     "static/css/2.9c14e806.chunk.css.map": "/squad-builder/static/css/2.9c14e806.chunk.css.map",
     "static/css/main.bc478f21.chunk.css.map": "/squad-builder/static/css/main.bc478f21.chunk.css.map",
@@ -227,6 +227,6 @@
     "static/css/2.9c14e806.chunk.css",
     "static/js/2.11e4f812.chunk.js",
     "static/css/main.bc478f21.chunk.css",
-    "static/js/main.418dac82.chunk.js"
+    "static/js/main.a07ee646.chunk.js"
   ]
 }
