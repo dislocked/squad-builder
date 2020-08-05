@@ -1331,7 +1331,7 @@ function SquadBuilder(){
                       <div className="squad-slot-card">
                         <div className="squad-card">
                           <div className="player-card player-card-shadow player-card-large bg-image2" style={{ backgroundImage: ovrCF >= 90 ? `url(` + require(`../images/bg/0.png`) + `)`: ovrCF >= 80 && ovrCF < 90 ? `url(` + require(`../images/bg/03.png`) + `)` : ovrCF >= 70 && ovrCF < 80 ? `url(` + require(`../images/bg/05.png`) + `)` : `url(` + require(`../images/bg/05.png`) + `)`}}>
-                          <div className="player-card-position">{formationID == 3 ? <p>RW</p> : formationID == 4 ? <p>RW</p> : <p>CF</p>}</div>
+                          <div className="player-card-position">{formationID == 3 ? <p>LW</p> : formationID == 4 ? <p>LW</p> : <p>CF</p>}</div>
                           <div className="player-card-ovr">{formationID == 1 ? <p>{ovrCF}</p> : formationID == 2 ? <p>{ovrCF}</p> : <p>{ovrCF}</p>}</div>
                           <div className="player-card-name">{name6}</div>
                           <img className="player-card-club-featured" src={require(`../images/clubs/${team6.toString().toLowerCase()}.png`)}></img>
