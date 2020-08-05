@@ -78,6 +78,16 @@ function SquadBuilder(){
     const [CC5, setCC5] = useState(0);
     const [CC6, setCC6] = useState(0);
 
+    const [ovrGK, setOvrGK] = useState(0);
+    const [ovrCB, setOvrCB] = useState(0);
+    const [ovrMCD, setOvrMCD] = useState(0);
+    const [ovrMCA, setOvrMCA] = useState(0);
+    const [ovrMCAB, setOvrMCAB] = useState(0);
+    const [ovrCF, setOvrCF] = useState(0);
+    const [ovrRW, setOvrRW] = useState(0);
+    const [ovrRB, setOvrRB] = useState(0);
+    const [ovrLB, setOvrLB] = useState(0);
+
     const [steamID, setSteamID] = useState(0);
     const [goals, setGoals] = useState(0);
     const [matches, setMatches] = useState(0);
@@ -287,6 +297,7 @@ function SquadBuilder(){
       const val_mcd = ( CC + AD ) / 2;
       let val_gk = CP;
       val_gk = val_gk || 0;
+      setOvrLB(Math.round(doSomethingWithInput(val_def)));
       setOvr2(Math.round(doSomethingWithInput(getOverall(val_del, val_def, val_mca, val_mcd, val_gk))));
       setPos2(getPosition(val_del, val_def, val_mca, val_mcd, val_gk));
       console.log("la posicion que tira la funcion es: " + getPosition(val_del, val_def, val_mca, val_mcd, val_gk));
@@ -366,6 +377,7 @@ function SquadBuilder(){
       const val_mcd = ( CC + AD ) / 2;
       let val_gk = CP;
       val_gk = val_gk || 0;
+      setOvrCB(Math.round(doSomethingWithInput(val_def)));
       setPos3(getPosition(val_del, val_def, val_mca, val_mcd, val_gk));
       setOvr3(Math.round(doSomethingWithInput(getOverall(val_del, val_def, val_mca, val_mcd, val_gk))));
     }
@@ -520,6 +532,9 @@ function SquadBuilder(){
       const val_mcd = ( CC + AD ) / 2;
       let val_gk = CP;
       val_gk = val_gk || 0;
+      setOvrRW(Math.round(doSomethingWithInput(val_del)));
+      setOvrRB(Math.round(doSomethingWithInput(val_def)));
+      setOvrMCA(Math.round(doSomethingWithInput(val_mca)));
       setPos5(getPosition(val_del, val_def, val_mca, val_mcd, val_gk));
       setOvr5(Math.round(doSomethingWithInput(getOverall(val_del, val_def, val_mca, val_mcd, val_gk))));
     }
@@ -597,6 +612,7 @@ function SquadBuilder(){
       const val_mcd = ( CC + AD ) / 2;
       let val_gk = CP;
       val_gk = val_gk || 0;
+      setOvrCF(Math.round(doSomethingWithInput(val_del)));
       setPos6(getPosition(val_del, val_def, val_mca, val_mcd, val_gk));
       setOvr6(Math.round(doSomethingWithInput(getOverall(val_del, val_def, val_mca, val_mcd, val_gk))));
     }
@@ -701,8 +717,9 @@ function SquadBuilder(){
       const val_mcd = ( CC + AD ) / 2;
       let val_gk = CP;
       val_gk = val_gk || 0;
+      setOvrGK(Math.round(doSomethingWithInput(val_gk)));
       setOvr(Math.round(doSomethingWithInput(getOverall(val_del, val_def, val_mca, val_mcd, val_gk))));
-      console.log("Chupate una verga -> CF:"+val_del+" DEF: "+val_def+" MCA: "+val_mca+" MCD: "+val_mcd+" GK: "+val_gk)
+      console.log("Los stats -> CF:"+val_del+" DEF: "+val_def+" MCA: "+val_mca+" MCD: "+val_mcd+" GK: "+val_gk)
       setPos(getPosition(val_del, val_def, val_mca, val_mcd, val_gk));
     }
 
@@ -1081,44 +1098,44 @@ function SquadBuilder(){
                 {formationID == 1 ? (
                   <div className="player-positions-new">
                   <div className="player-positions-row">
-                    <div className="player-positions-item fw-2" style={{backgroundColor: ovr6 >= 85 ? '#ef1e1e': ovr6 >= 75 && ovr6 < 85 ? '#f09090' : 'white' }}> 
-                      <span className="pos">{pos6}</span>
-                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovr5)}</span>
+                    <div className="player-positions-item fw-2" style={{backgroundColor: ovrCF >= 85 ? '#ef1e1e': ovrCF >= 75 && ovrCF < 85 ? '#f09090' : 'white' }}> 
+                      <span className="pos">CF</span>
+                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovrCF)}</span>
                     </div>
                   </div>
                   <div className="player-positions-row">
-                    <div className="player-positions-item" style={{backgroundColor: ovr5 >= 85 ? '#88c900': ovr5 >= 75 && ovr5 < 85 ? '#b6c98d' : 'white' }}> 
-                      <span className="pos">{pos5}</span>
-                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovr5)}</span>
-                    </div>
                     <div className="player-positions-item" style={{backgroundColor: ovr4 >= 85 ? '#88c900': ovr4 >= 75 && ovr4 < 85 ? '#b6c98d' : 'white' }}> 
                       <span className="pos">{pos4}</span>
                       <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovr4)}</span>
                     </div>
-                  </div>
-                  <div className="player-positions-row">
-                    <div className="player-positions-item fw-2" style={{backgroundColor: ovr3 >= 85 ? '#00abd2': ovr3 >= 75 && ovr3 < 85 ? '#92c6d1' : 'white' }}> 
-                      <span className="pos">{pos3}</span>
-                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovr3)}</span>
-                    </div>
-                    <div className="player-positions-item fw-2" style={{backgroundColor: ovr2 >= 85 ? '#00abd2': ovr2 >= 75 && ovr2 < 85 ? '#92c6d1' : 'white' }}> 
-                      <span className="pos">{pos2}</span>
-                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovr2)}</span>
+                    <div className="player-positions-item" style={{backgroundColor: ovr5 >= 85 ? '#88c900': ovr5 >= 75 && ovr5 < 85 ? '#b6c98d' : 'white' }}> 
+                      <span className="pos">{pos5}</span>
+                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovr5)}</span>
                     </div>
                   </div>
                   <div className="player-positions-row">
-                    <div className="player-positions-item fw-2" style={{backgroundColor: ovr >= 85 ? '#feb907': ovr >= 75 && ovr < 85 ? '#fed97b' : 'white' }}> 
-                      <span className="pos">{pos}</span>
-                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovr)}</span>
+                    <div className="player-positions-item fw-2" style={{backgroundColor: ovrLB >= 85 ? '#00abd2': ovrLB >= 75 && ovrLB < 85 ? '#92c6d1' : 'white' }}> 
+                      <span className="pos">LB</span>
+                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovrLB)}</span>
+                    </div>
+                    <div className="player-positions-item fw-2" style={{backgroundColor: ovrCB >= 85 ? '#00abd2': ovrCB >= 75 && ovrCB < 85 ? '#92c6d1' : 'white' }}> 
+                      <span className="pos">RB</span>
+                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovrCB)}</span>
+                    </div>
+                  </div>
+                  <div className="player-positions-row">
+                  <div className="player-positions-item fw-2" style={{backgroundColor: ovrGK >= 85 ? '#feb907': ovrGK >= 75 && ovrGK < 85 ? '#fed97b' : 'white' }}> 
+                      <span className="pos">GK</span>
+                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovrGK)}</span>
                     </div>
                   </div>
                 </div> ) 
                 : formationID == 2 ? (
                   <div className="player-positions-new">
                   <div className="player-positions-row">
-                    <div className="player-positions-item fw-2" style={{backgroundColor: ovr6 >= 85 ? '#ef1e1e': ovr6 >= 75 && ovr6 < 85 ? '#f09090' : 'white' }}> 
-                      <span className="pos">{pos6}</span>
-                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovr5)}</span>
+                  <div className="player-positions-item fw-2" style={{backgroundColor: ovrCF >= 85 ? '#ef1e1e': ovrCF >= 75 && ovrCF < 85 ? '#f09090' : 'white' }}> 
+                      <span className="pos">CF</span>
+                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovrCF)}</span>
                     </div>
                   </div>
                   <div className="player-positions-row">
@@ -1128,36 +1145,36 @@ function SquadBuilder(){
                     </div>
                   </div>
                   <div className="player-positions-row">
-                    <div className="player-positions-item fw-2" style={{backgroundColor: ovr3 >= 85 ? '#00abd2': ovr3 >= 75 && ovr3 < 85 ? '#92c6d1' : 'white' }}> 
-                      <span className="pos">{pos3}</span>
-                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovr3)}</span>
+                    <div className="player-positions-item fw-2" style={{backgroundColor: ovrLB >= 85 ? '#00abd2': ovrLB >= 75 && ovrLB < 85 ? '#92c6d1' : 'white' }}> 
+                      <span className="pos">LB</span>
+                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovrLB)}</span>
                     </div>
-                    <div className="player-positions-item fw-2" style={{backgroundColor: ovr2 >= 85 ? '#00abd2': ovr2 >= 75 && ovr2 < 85 ? '#92c6d1' : 'white' }}> 
-                      <span className="pos">{pos2}</span>
-                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovr2)}</span>
+                    <div className="player-positions-item fw-2" style={{backgroundColor: ovrCB >= 85 ? '#00abd2': ovrCB >= 75 && ovrCB < 85 ? '#92c6d1' : 'white' }}>  
+                      <span className="pos">CB</span>
+                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovrCB)}</span>
                     </div>
-                    <div className="player-positions-item" style={{backgroundColor: ovr5 >= 85 ? '#88c900': ovr5 >= 75 && ovr5 < 85 ? '#b6c98d' : 'white' }}> 
-                      <span className="pos">{pos5}</span>
-                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovr5)}</span>
+                    <div className="player-positions-item fw-2" style={{backgroundColor: ovrRB >= 85 ? '#00abd2': ovrRB >= 75 && ovrRB < 85 ? '#92c6d1' : 'white' }}>
+                      <span className="pos">RB</span>
+                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovrRB)}</span>
                     </div>
                   </div>
                   <div className="player-positions-row">
-                    <div className="player-positions-item fw-2" style={{backgroundColor: ovr >= 85 ? '#feb907': ovr >= 75 && ovr < 85 ? '#fed97b' : 'white' }}> 
-                      <span className="pos">{pos}</span>
-                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovr)}</span>
+                  <div className="player-positions-item fw-2" style={{backgroundColor: ovrGK >= 85 ? '#feb907': ovrGK >= 75 && ovrGK < 85 ? '#fed97b' : 'white' }}> 
+                      <span className="pos">GK</span>
+                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovrGK)}</span>
                     </div>
                   </div>
                 </div>
                 ) : (
                   <div className="player-positions-new">
                   <div className="player-positions-row">
-                    <div className="player-positions-item fw-2" style={{backgroundColor: ovr6 >= 85 ? '#ef1e1e': ovr6 >= 75 && ovr6 < 85 ? '#f09090' : 'white' }}> 
-                      <span className="pos">{pos6}</span>
-                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovr5)}</span>
+                    <div className="player-positions-item fw-2" style={{backgroundColor: ovrCF >= 85 ? '#ef1e1e': ovrCF >= 75 && ovrCF < 85 ? '#f09090' : 'white' }}> 
+                      <span className="pos">LW</span>
+                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovrCF)}</span>
                     </div>
-                    <div className="player-positions-item" style={{backgroundColor: ovr5 >= 85 ? '#88c900': ovr5 >= 75 && ovr5 < 85 ? '#b6c98d' : 'white' }}> 
-                      <span className="pos">{pos5}</span>
-                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovr5)}</span>
+                    <div className="player-positions-item" style={{backgroundColor: ovrRW >= 85 ? '#ef1e1e': ovrRW >= 75 && ovrRW < 85 ? '#f09090' : 'white' }}>  
+                      <span className="pos">RW</span>
+                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovrRW)}</span>
                     </div>
                   </div>
                   <div className="player-positions-row">
@@ -1167,19 +1184,19 @@ function SquadBuilder(){
                     </div>
                   </div>
                   <div className="player-positions-row">
-                    <div className="player-positions-item fw-2" style={{backgroundColor: ovr3 >= 85 ? '#00abd2': ovr3 >= 75 && ovr3 < 85 ? '#92c6d1' : 'white' }}> 
-                      <span className="pos">{pos3}</span>
-                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovr3)}</span>
-                    </div>
                     <div className="player-positions-item fw-2" style={{backgroundColor: ovr2 >= 85 ? '#00abd2': ovr2 >= 75 && ovr2 < 85 ? '#92c6d1' : 'white' }}> 
-                      <span className="pos">{pos2}</span>
-                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovr2)}</span>
+                      <span className="pos">LB</span>
+                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovrLB)}</span>
+                    </div>
+                    <div className="player-positions-item fw-2" style={{backgroundColor: ovrCB >= 85 ? '#00abd2': ovrCB >= 75 && ovrCB < 85 ? '#92c6d1' : 'white' }}> 
+                      <span className="pos">RB</span>
+                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovrCB)}</span>
                     </div>
                   </div>
                   <div className="player-positions-row">
-                    <div className="player-positions-item fw-2" style={{backgroundColor: ovr >= 85 ? '#feb907': ovr >= 75 && ovr < 85 ? '#fed97b' : 'white' }}> 
-                      <span className="pos">{pos}</span>
-                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovr)}</span>
+                    <div className="player-positions-item fw-2" style={{backgroundColor: ovrGK >= 85 ? '#feb907': ovrGK >= 75 && ovrGK < 85 ? '#fed97b' : 'white' }}> 
+                      <span className="pos">GK</span>
+                      <span className="stat ovr_12 stat_tier_3" style={{backgroundColor: 'rgba(250, 250, 250, 0.2)'}}>{Math.trunc(ovrGK)}</span>
                     </div>
                   </div>
                   </div>
@@ -1223,9 +1240,9 @@ function SquadBuilder(){
                     <div className="squad-slot2 squad-slot2-interactive">
                       <div className="squad-slot-card">
                         <div className="squad-card">
-                          <div className="player-card player-card-shadow player-card-large bg-image2" style={{ backgroundImage: ovr >= 90 ? `url(` + require(`../images/bg/0.png`) + `)`: ovr >= 80 && ovr < 90 ? `url(` + require(`../images/bg/03.png`) + `)` : ovr >= 70 && ovr < 80 ? `url(` + require(`../images/bg/05.png`) + `)` : `url(` + require(`../images/bg/05.png`) + `)`}}>
-                          <div className="player-card-position">{pos}</div>
-                          <div className="player-card-ovr">{ovr}</div>
+                          <div className="player-card player-card-shadow player-card-large bg-image2" style={{ backgroundImage: ovrGK >= 90 ? `url(` + require(`../images/bg/0.png`) + `)`: ovrGK >= 80 && ovrGK < 90 ? `url(` + require(`../images/bg/03.png`) + `)` : ovrGK >= 70 && ovrGK < 80 ? `url(` + require(`../images/bg/05.png`) + `)` : `url(` + require(`../images/bg/05.png`) + `)`}}>
+                          <div className="player-card-position">GK</div>
+                          <div className="player-card-ovr">{ovrGK}</div>
                           <div className="player-card-name">{name}</div>
                           <img className="player-card-club-featured" src={require(`../images/clubs/${team.toString().toLowerCase()}.png`)}></img>
                           <img className="player-card-image-featured" src={require(`../images/cartas/${id}.png`)}></img>
@@ -1240,9 +1257,9 @@ function SquadBuilder(){
                     <div className="squad-slot2 squad-slot2-interactive">
                       <div className="squad-slot-card">
                         <div className="squad-card">
-                          <div className="player-card player-card-shadow player-card-large bg-image2" style={{ backgroundImage: ovr2 >= 90 ? `url(` + require(`../images/bg/0.png`) + `)`: ovr2 >= 80 && ovr2 < 90 ? `url(` + require(`../images/bg/03.png`) + `)` : ovr2 >= 70 && ovr2 < 80 ? `url(` + require(`../images/bg/05.png`) + `)` : `url(` + require(`../images/bg/05.png`) + `)`}}>
-                          <div className="player-card-position">{pos2}</div>
-                          <div className="player-card-ovr">{ovr2}</div>
+                          <div className="player-card player-card-shadow player-card-large bg-image2" style={{ backgroundImage: ovrLB >= 90 ? `url(` + require(`../images/bg/0.png`) + `)`: ovrLB >= 80 && ovrLB < 90 ? `url(` + require(`../images/bg/03.png`) + `)` : ovrLB >= 70 && ovrLB < 80 ? `url(` + require(`../images/bg/05.png`) + `)` : `url(` + require(`../images/bg/05.png`) + `)`}}>
+                          <div className="player-card-position"><p>LB</p></div>
+                          <div className="player-card-ovr">{ovrLB}</div>
                           <div className="player-card-name">{name2}</div>
                           <img className="player-card-club-featured" src={require(`../images/clubs/${team2.toString().toLowerCase()}.png`)}></img>
                           <img className="player-card-image-featured" src={require(`../images/cartas/${id2}.png`)}></img>
@@ -1258,8 +1275,8 @@ function SquadBuilder(){
                       <div className="squad-slot-card">
                         <div className="squad-card">
                           <div className="player-card player-card-shadow player-card-large bg-image2" style={{ backgroundImage: ovr3 >= 90 ? `url(` + require(`../images/bg/0.png`) + `)`: ovr3 >= 80 && ovr3 < 90 ? `url(` + require(`../images/bg/03.png`) + `)` : ovr3 >= 70 && ovr3 < 80 ? `url(` + require(`../images/bg/05.png`) + `)` : `url(` + require(`../images/bg/05.png`) + `)`}}>
-                          <div className="player-card-position">{pos3}</div>
-                          <div className="player-card-ovr">{ovr3}</div>
+                          <div className="player-card-position">{formationID == 1 ? <p>RB</p> : formationID == 2 ? <p>CB</p> : <p>RB</p>}</div>
+                          <div className="player-card-ovr">{formationID == 1 ? <p>{ovrCB}</p> : formationID == 2 ? <p>{ovrCB}</p> : <p>{ovrCB}</p>}</div>
                           <div className="player-card-name">{name3}</div>
                           <img className="player-card-club-featured" src={require(`../images/clubs/${team3.toString().toLowerCase()}.png`)}></img>
                           <img className="player-card-image-featured" src={require(`../images/cartas/${id3}.png`)}></img>
@@ -1291,9 +1308,14 @@ function SquadBuilder(){
                     <div className="squad-slot2 squad-slot2-interactive">
                       <div className="squad-slot-card">
                         <div className="squad-card">
-                          <div className="player-card player-card-shadow player-card-large bg-image2" style={{ backgroundImage: ovr5 >= 90 ? `url(` + require(`../images/bg/0.png`) + `)`: ovr5 >= 80 && ovr5 < 90 ? `url(` + require(`../images/bg/03.png`) + `)` : ovr5 >= 70 && ovr5 < 80 ? `url(` + require(`../images/bg/05.png`) + `)` : `url(` + require(`../images/bg/05.png`) + `)`}}>
-                          <div className="player-card-position">{pos5}</div>
-                          <div className="player-card-ovr">{ovr5}</div>
+                          <div className="player-card player-card-shadow player-card-large bg-image2" style={{ backgroundImage: 
+                            
+                            formationID == 1 ? ovrMCA >= 90 ? `url(` + require(`../images/bg/0.png`) + `)`: ovrMCA >= 80 && ovrMCA < 90 ? `url(` + require(`../images/bg/03.png`) + `)` : ovrMCA >= 70 && ovrMCA < 80 ? `url(` + require(`../images/bg/05.png`) + `)` : `url(` + require(`../images/bg/05.png`) + `)`
+                            : formationID == 2 ? ovrRB >= 90 ? `url(` + require(`../images/bg/0.png`) + `)`: ovrRB >= 80 && ovrRB < 90 ? `url(` + require(`../images/bg/03.png`) + `)` : ovrRB >= 70 && ovrRB < 80 ? `url(` + require(`../images/bg/05.png`) + `)` : `url(` + require(`../images/bg/05.png`) + `)`
+                            : ovrRW >= 90 ? `url(` + require(`../images/bg/0.png`) + `)`: ovrRW >= 80 && ovrRW < 90 ? `url(` + require(`../images/bg/03.png`) + `)` : ovrRW >= 70 && ovrRW < 80 ? `url(` + require(`../images/bg/05.png`) + `)` : `url(` + require(`../images/bg/05.png`) + `)`
+                            }}>
+                          <div className="player-card-position">{formationID == 1 ? <p>MCA</p> : formationID == 2 ? <p>RB</p> : <p>RW</p>}</div>
+                          <div className="player-card-ovr">{formationID == 1 ? <p>{ovrMCA}</p> : formationID == 2 ? <p>{ovrRB}</p> : <p>{ovrRW}</p>}</div>
                           <div className="player-card-name">{name5}</div>
                           <img className="player-card-club-featured" src={require(`../images/clubs/${team5.toString().toLowerCase()}.png`)}></img>
                           <img className="player-card-image-featured" src={require(`../images/cartas/${id5}.png`)}></img>
@@ -1308,9 +1330,9 @@ function SquadBuilder(){
                     <div className="squad-slot2 squad-slot2-interactive">
                       <div className="squad-slot-card">
                         <div className="squad-card">
-                          <div className="player-card player-card-shadow player-card-large bg-image2" style={{ backgroundImage: ovr6 >= 90 ? `url(` + require(`../images/bg/0.png`) + `)`: ovr6 >= 80 && ovr6 < 90 ? `url(` + require(`../images/bg/03.png`) + `)` : ovr6 >= 70 && ovr6 < 80 ? `url(` + require(`../images/bg/05.png`) + `)` : `url(` + require(`../images/bg/05.png`) + `)`}}>
-                          <div className="player-card-position">{pos6}</div>
-                          <div className="player-card-ovr">{ovr6}</div>
+                          <div className="player-card player-card-shadow player-card-large bg-image2" style={{ backgroundImage: ovrCF >= 90 ? `url(` + require(`../images/bg/0.png`) + `)`: ovrCF >= 80 && ovrCF < 90 ? `url(` + require(`../images/bg/03.png`) + `)` : ovrCF >= 70 && ovrCF < 80 ? `url(` + require(`../images/bg/05.png`) + `)` : `url(` + require(`../images/bg/05.png`) + `)`}}>
+                          <div className="player-card-position">{formationID == 3 ? <p>RW</p> : formationID == 4 ? <p>RW</p> : <p>CF</p>}</div>
+                          <div className="player-card-ovr">{formationID == 1 ? <p>{ovrCF}</p> : formationID == 2 ? <p>{ovrCF}</p> : <p>{ovrCF}</p>}</div>
                           <div className="player-card-name">{name6}</div>
                           <img className="player-card-club-featured" src={require(`../images/clubs/${team6.toString().toLowerCase()}.png`)}></img>
                           <img className="player-card-image-featured" src={require(`../images/cartas/${id6}.png`)}></img>
