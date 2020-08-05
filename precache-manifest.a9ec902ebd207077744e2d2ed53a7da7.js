@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bc679ed18701af6c79276f4d106eba0e",
+    "revision": "c7f4d7e770a8aa617bca10a0f9ce6fa9",
     "url": "/squad-builder/index.html"
   },
   {
-    "revision": "9394625d2469ba48eff0",
+    "revision": "ba87ede378ac53521650",
     "url": "/squad-builder/static/css/2.9c14e806.chunk.css"
   },
   {
-    "revision": "ee1cd95ec291ce990004",
-    "url": "/squad-builder/static/css/main.ce101705.chunk.css"
+    "revision": "2903eeaf7adee6c49961",
+    "url": "/squad-builder/static/css/main.bc478f21.chunk.css"
   },
   {
-    "revision": "9394625d2469ba48eff0",
-    "url": "/squad-builder/static/js/2.a7a175b9.chunk.js"
+    "revision": "ba87ede378ac53521650",
+    "url": "/squad-builder/static/js/2.11e4f812.chunk.js"
   },
   {
     "revision": "7bb035bfd60efc6b5071b625dbe1f69b",
-    "url": "/squad-builder/static/js/2.a7a175b9.chunk.js.LICENSE.txt"
+    "url": "/squad-builder/static/js/2.11e4f812.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ee1cd95ec291ce990004",
-    "url": "/squad-builder/static/js/main.418500c0.chunk.js"
+    "revision": "2903eeaf7adee6c49961",
+    "url": "/squad-builder/static/js/main.418dac82.chunk.js"
   },
   {
     "revision": "3f75bba31fed5e2b843a",
