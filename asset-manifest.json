@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/squad-builder/static/css/main.ce101705.chunk.css",
-    "main.js": "/squad-builder/static/js/main.25df7aee.chunk.js",
-    "main.js.map": "/squad-builder/static/js/main.25df7aee.chunk.js.map",
+    "main.js": "/squad-builder/static/js/main.418500c0.chunk.js",
+    "main.js.map": "/squad-builder/static/js/main.418500c0.chunk.js.map",
     "runtime-main.js": "/squad-builder/static/js/runtime-main.da01d767.js",
     "runtime-main.js.map": "/squad-builder/static/js/runtime-main.da01d767.js.map",
-    "static/css/2.3d07f9ae.chunk.css": "/squad-builder/static/css/2.3d07f9ae.chunk.css",
-    "static/js/2.45cead47.chunk.js": "/squad-builder/static/js/2.45cead47.chunk.js",
-    "static/js/2.45cead47.chunk.js.map": "/squad-builder/static/js/2.45cead47.chunk.js.map",
+    "static/css/2.9c14e806.chunk.css": "/squad-builder/static/css/2.9c14e806.chunk.css",
+    "static/js/2.a7a175b9.chunk.js": "/squad-builder/static/js/2.a7a175b9.chunk.js",
+    "static/js/2.a7a175b9.chunk.js.map": "/squad-builder/static/js/2.a7a175b9.chunk.js.map",
     "index.html": "/squad-builder/index.html",
-    "precache-manifest.52a0f86f8deacb88323e27db0eb8d359.js": "/squad-builder/precache-manifest.52a0f86f8deacb88323e27db0eb8d359.js",
+    "precache-manifest.b4e539b895dc40c3676e96cdb96e4d5b.js": "/squad-builder/precache-manifest.b4e539b895dc40c3676e96cdb96e4d5b.js",
     "service-worker.js": "/squad-builder/service-worker.js",
-    "static/css/2.3d07f9ae.chunk.css.map": "/squad-builder/static/css/2.3d07f9ae.chunk.css.map",
+    "static/css/2.9c14e806.chunk.css.map": "/squad-builder/static/css/2.9c14e806.chunk.css.map",
     "static/css/main.ce101705.chunk.css.map": "/squad-builder/static/css/main.ce101705.chunk.css.map",
-    "static/js/2.45cead47.chunk.js.LICENSE.txt": "/squad-builder/static/js/2.45cead47.chunk.js.LICENSE.txt",
+    "static/js/2.a7a175b9.chunk.js.LICENSE.txt": "/squad-builder/static/js/2.a7a175b9.chunk.js.LICENSE.txt",
     "static/media/0.png": "/squad-builder/static/media/0.e2eefe35.png",
     "static/media/03.png": "/squad-builder/static/media/03.563377e9.png",
     "static/media/05.png": "/squad-builder/static/media/05.cea8ddf0.png",
@@ -224,9 +224,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.da01d767.js",
-    "static/css/2.3d07f9ae.chunk.css",
-    "static/js/2.45cead47.chunk.js",
+    "static/css/2.9c14e806.chunk.css",
+    "static/js/2.a7a175b9.chunk.js",
     "static/css/main.ce101705.chunk.css",
-    "static/js/main.25df7aee.chunk.js"
+    "static/js/main.418500c0.chunk.js"
   ]
 }
