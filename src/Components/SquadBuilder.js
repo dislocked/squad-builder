@@ -327,7 +327,7 @@ function SquadBuilder(){
       const totaltimet4 = userD[0] != undefined ? ( userD[0].secondsplayed/60/90 > userD[0].matches ? userD[0].matches : userD[0].secondsplayed/60/90 ) : 0;
       console.log("El total time de la T4 es: "+ totaltimet4);
       const totaltimet5 = userE[0] != undefined ? ( userE[0].secondsplayed/60/90 > userE[0].matches ? userE[0].matches : userE[0].secondsplayed/60/90 ) : 0;
-      console.log("El total time de la T1 es: "+totaltimet5);
+      console.log("El total time de la T5 es: "+totaltimet5);
       const totaltimet0 = userF[0] != undefined ? ( userF[0].secondsplayed/60/90 > userF[0].matches ? userF[0].matches : userF[0].secondsplayed/60/90 ) : 0;
       const actualtime = Math.round(totaltimet1+totaltimet2+totaltimet3+totaltimet4+totaltimet5+totaltimet0);
 
@@ -474,15 +474,10 @@ function SquadBuilder(){
       const userF = await apiCallF.json();
       
       const totaltimet1 = userA[0] != undefined? (userA[0].secondsplayed/60/90 > userA[0].matches ? userA[0].matches : userA[0].secondsplayed/60/90) : 0;
-      console.log("El total time de la T1 es: "+totaltimet1);
       const totaltimet2 = userB[0] != undefined? userB[0].secondsplayed/60/90 > userB[0].matches ? userB[0].matches : userB[0].secondsplayed/60/90 : 0;
-      console.log("El total time de la T2 es: "+totaltimet2);
       const totaltimet3 = userC[0] != undefined ? ( userC[0].secondsplayed/60/90 > userC[0].matches ? userC[0].matches : userC[0].secondsplayed/60/90 ) : 0;
-      console.log("El total time de la T3 es: "+totaltimet3);
       const totaltimet4 = userD[0] != undefined ? ( userD[0].secondsplayed/60/90 > userD[0].matches ? userD[0].matches : userD[0].secondsplayed/60/90 ) : 0;
-      console.log("El total time de la T4 es: "+ totaltimet4);
       const totaltimet5 = userE[0] != undefined ? ( userE[0].secondsplayed/60/90 > userE[0].matches ? userE[0].matches : userE[0].secondsplayed/60/90 ) : 0;
-      console.log("El total time de la T1 es: "+totaltimet5);
       const totaltimet0 = userF[0] != undefined ? ( userF[0].secondsplayed/60/90 > userF[0].matches ? userF[0].matches : userF[0].secondsplayed/60/90 ) : 0;
       const actualtime = Math.round(totaltimet1+totaltimet2+totaltimet3+totaltimet4+totaltimet5+totaltimet0);
 

@@ -9,16 +9,16 @@ export const doSomethingWithInput = (theInput) => {
    let i = 1;
    let aux = 0;
 
-   if(theInput<40 || !theInput){
-    aux = 40
+   if(theInput<50 || !theInput){
+    aux = 50
      loop = false;
    }
-   if(theInput>=100){
-    aux = 100 + (theInput * 0.021);
+   if(theInput>=92){
+    aux = 92 + (theInput * 0.021);
      loop = false;
    }
    do {
-   if(theInput<(101-i) && theInput >= (100-i) ){
+   if(theInput<(93-i) && theInput >= (92-i) ){
     aux = theInput * multiplicador;
        loop = false;
    }else{
