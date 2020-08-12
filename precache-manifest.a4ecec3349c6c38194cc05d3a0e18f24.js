@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2216abb03686de324f1294b1b06e3d5f",
+    "revision": "1033af92169b6f8ce4fd95be7b901da7",
     "url": "/squad-builder/index.html"
   },
   {
-    "revision": "63d1c07de3ed09fca9c8",
+    "revision": "961f0940dc5a2048a52c",
     "url": "/squad-builder/static/css/2.9c14e806.chunk.css"
   },
   {
-    "revision": "84e342e1b56565b3ca37",
+    "revision": "b4382bab91bf5d738b9f",
     "url": "/squad-builder/static/css/main.bc478f21.chunk.css"
   },
   {
-    "revision": "63d1c07de3ed09fca9c8",
-    "url": "/squad-builder/static/js/2.ff4187b7.chunk.js"
+    "revision": "961f0940dc5a2048a52c",
+    "url": "/squad-builder/static/js/2.4301d48c.chunk.js"
   },
   {
     "revision": "7bb035bfd60efc6b5071b625dbe1f69b",
-    "url": "/squad-builder/static/js/2.ff4187b7.chunk.js.LICENSE.txt"
+    "url": "/squad-builder/static/js/2.4301d48c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "84e342e1b56565b3ca37",
-    "url": "/squad-builder/static/js/main.7c736f3f.chunk.js"
+    "revision": "b4382bab91bf5d738b9f",
+    "url": "/squad-builder/static/js/main.e895e2e8.chunk.js"
   },
   {
     "revision": "3f75bba31fed5e2b843a",
@@ -628,6 +628,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/squad-builder/static/media/coldchester united fc.b21a1e33.png"
   },
   {
+    "revision": "916e797d1ab0998d198bbbca81241519",
+    "url": "/squad-builder/static/media/cualidachi f.c.916e797d.png"
+  },
+  {
     "revision": "b21a1e338fe793ab3a522b7f364dfed6",
     "url": "/squad-builder/static/media/cufc.b21a1e33.png"
   },
@@ -646,6 +650,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "703783645d174e1694d34bd13353536b",
     "url": "/squad-builder/static/media/deportivo empate.70378364.png"
+  },
+  {
+    "revision": "ea271385caa39ad727a916f6d3be3936",
+    "url": "/squad-builder/static/media/dream seven.ea271385.png"
   },
   {
     "revision": "7c2088868df47e4e5b8ca5edc0be7af0",
@@ -774,6 +782,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9ebf4a20efa07d95ac26aa6635bb424e",
     "url": "/squad-builder/static/media/los halcones.9ebf4a20.png"
+  },
+  {
+    "revision": "af4bd46f9928b4ee4d5987896741b75a",
+    "url": "/squad-builder/static/media/los magios.af4bd46f.png"
   },
   {
     "revision": "767c7ab8046724af5b8e0d63cf829b13",
@@ -982,6 +994,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "54ce61f55a1c53787dcde873d4d88535",
     "url": "/squad-builder/static/media/velez sarsfield.54ce61f5.png"
+  },
+  {
+    "revision": "54ce61f55a1c53787dcde873d4d88535",
+    "url": "/squad-builder/static/media/velez.54ce61f5.png"
   },
   {
     "revision": "f0a50523fa76381359692dc9823db11d",
