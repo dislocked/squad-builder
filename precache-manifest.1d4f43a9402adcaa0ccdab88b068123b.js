@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "447790af937e3b4a9561f7904a0b411a",
+    "revision": "2216abb03686de324f1294b1b06e3d5f",
     "url": "/squad-builder/index.html"
   },
   {
-    "revision": "d2821fb5285d5edc21d8",
+    "revision": "63d1c07de3ed09fca9c8",
     "url": "/squad-builder/static/css/2.9c14e806.chunk.css"
   },
   {
-    "revision": "8b569da53a0198e7838c",
+    "revision": "84e342e1b56565b3ca37",
     "url": "/squad-builder/static/css/main.bc478f21.chunk.css"
   },
   {
-    "revision": "d2821fb5285d5edc21d8",
-    "url": "/squad-builder/static/js/2.50ba3271.chunk.js"
+    "revision": "63d1c07de3ed09fca9c8",
+    "url": "/squad-builder/static/js/2.ff4187b7.chunk.js"
   },
   {
     "revision": "7bb035bfd60efc6b5071b625dbe1f69b",
-    "url": "/squad-builder/static/js/2.50ba3271.chunk.js.LICENSE.txt"
+    "url": "/squad-builder/static/js/2.ff4187b7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8b569da53a0198e7838c",
-    "url": "/squad-builder/static/js/main.bbc594c4.chunk.js"
+    "revision": "84e342e1b56565b3ca37",
+    "url": "/squad-builder/static/js/main.7c736f3f.chunk.js"
   },
   {
     "revision": "3f75bba31fed5e2b843a",
@@ -564,6 +564,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/squad-builder/static/media/caballeros de la birra.7ef3cd09.png"
   },
   {
+    "revision": "916e797d1ab0998d198bbbca81241519",
+    "url": "/squad-builder/static/media/cacfc.916e797d.png"
+  },
+  {
     "revision": "8c9b37d7e09ebae4f328e03be4c33e88",
     "url": "/squad-builder/static/media/cadb.8c9b37d7.png"
   },
@@ -628,6 +632,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/squad-builder/static/media/cufc.b21a1e33.png"
   },
   {
+    "revision": "ea271385caa39ad727a916f6d3be3936",
+    "url": "/squad-builder/static/media/d7.ea271385.png"
+  },
+  {
     "revision": "8c9b37d7e09ebae4f328e03be4c33e88",
     "url": "/squad-builder/static/media/defensores del bidon.8c9b37d7.png"
   },
@@ -672,6 +680,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/squad-builder/static/media/gb.ec581e49.png"
   },
   {
+    "revision": "7f88cf36293d423dd2564b059cbdec12",
+    "url": "/squad-builder/static/media/int.7f88cf36.png"
+  },
+  {
     "revision": "bbf1e354be75bb91d20eeca1d81ec2f7",
     "url": "/squad-builder/static/media/inter - copia.bbf1e354.png"
   },
@@ -706,6 +718,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a0bcadb7a5d23b39509676dac602f270",
     "url": "/squad-builder/static/media/jfb.a0bcadb7.png"
+  },
+  {
+    "revision": "cf076f43989ab74c2f8b04128afb9199",
+    "url": "/squad-builder/static/media/jub.cf076f43.png"
   },
   {
     "revision": "cf076f43989ab74c2f8b04128afb9199",
@@ -748,6 +764,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/squad-builder/static/media/lhfc.9ebf4a20.png"
   },
   {
+    "revision": "af4bd46f9928b4ee4d5987896741b75a",
+    "url": "/squad-builder/static/media/lmg.af4bd46f.png"
+  },
+  {
     "revision": "99f3be650b8c799864c72c50d26c81ac",
     "url": "/squad-builder/static/media/logo-iossa-black.99f3be65.png"
   },
@@ -768,6 +788,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/squad-builder/static/media/mago.1ce810f9.png"
   },
   {
+    "revision": "767c7ab8046724af5b8e0d63cf829b13",
+    "url": "/squad-builder/static/media/mago.767c7ab8.png"
+  },
+  {
     "revision": "c39392b3bbf73a9bd7fd89a719c305ee",
     "url": "/squad-builder/static/media/mcfc.c39392b3.png"
   },
@@ -778,6 +802,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3aab68693099b59de70a1e4d1810589a",
     "url": "/squad-builder/static/media/mds.3aab6869.png"
+  },
+  {
+    "revision": "54d2a39c54f57608349c21c66ead8797",
+    "url": "/squad-builder/static/media/mds.54d2a39c.png"
   },
   {
     "revision": "0bd9173867cb79b5e3b1b0c04490b393",
@@ -836,6 +864,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/squad-builder/static/media/nankatsu.8ecb6603.png"
   },
   {
+    "revision": "8ecb6603765d251e1f82b1bb494e761e",
+    "url": "/squad-builder/static/media/nsc.8ecb6603.png"
+  },
+  {
     "revision": "aaf19acb524257da01cdf07d78278f84",
     "url": "/squad-builder/static/media/painters united.aaf19acb.png"
   },
@@ -850,6 +882,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "dbe32c6d268a3e64f262a51b87ec7a26",
     "url": "/squad-builder/static/media/peñarol.dbe32c6d.png"
+  },
+  {
+    "revision": "3c7451d5bf9208c9535a53d823fb5ad4",
+    "url": "/squad-builder/static/media/ph.3c7451d5.png"
   },
   {
     "revision": "ae293d67ad4ee6cc8a501d25ea7c5309",
@@ -922,6 +958,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "315dd154680f720c1054aebfab2bb3c7",
     "url": "/squad-builder/static/media/stargazing fc.315dd154.png"
+  },
+  {
+    "revision": "703783645d174e1694d34bd13353536b",
+    "url": "/squad-builder/static/media/ude.70378364.png"
+  },
+  {
+    "revision": "a0de6d755eabe24edcd7011eeec036fd",
+    "url": "/squad-builder/static/media/udu.a0de6d75.png"
   },
   {
     "revision": "a0de6d755eabe24edcd7011eeec036fd",
